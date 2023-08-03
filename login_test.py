@@ -21,6 +21,7 @@ else:
 driver.find_element(By.ID, "checkin-email").click()
 # С помощью DevTools заранее находим элемент и нажимаем на кнопку "Войти".
 driver.find_element(By.ID, "checkin-email").send_keys("оченькрутойимэйл@нонарусском.да")
+time.sleep(5)
 driver.find_element(By.ID, "checkin-email").send_keys(Keys.ENTER)
 # Вводим заведомо неверный адрес электронной почты на русском языке.
 driver.get_screenshot_as_file("C:\Проекты\login.png")
