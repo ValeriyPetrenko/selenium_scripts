@@ -25,6 +25,13 @@ time.sleep(5)
 driver.find_element(By.CLASS_NAME, "ll-input-search").send_keys(Keys.ENTER)
 # Имитируем нажатие клавиши Enter.
 time.sleep(5)
+driver.find_element(By.CLASS_NAME, "btn-search-new").send_keys(Keys.ARROW_DOWN)
+driver.find_element(By.CLASS_NAME, "btn-search-new").send_keys(Keys.ARROW_DOWN)
+driver.find_element(By.CLASS_NAME, "btn-search-new").send_keys(Keys.ARROW_DOWN)
+driver.find_element(By.CLASS_NAME, "btn-search-new").send_keys(Keys.ARROW_DOWN)
+driver.find_element(By.CLASS_NAME, "btn-search-new").send_keys(Keys.ARROW_DOWN)
+# Имитируем нажатие клавиши "Вниз" несколько раз чтобы увидеть результат поиска.
+time.sleep(5)
 driver.get_screenshot_as_file("C:\Проекты\search.png")
 # Сохраняем резултьтат теста, сохранив скриншот. Путь к файлу можно изменить на любую папку в вашей файловой системе.
 time.sleep(5)
